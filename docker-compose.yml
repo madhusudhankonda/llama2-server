@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  llama2server:
+    image: llama2server
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 4500:4500
+      - 4502:4502
